@@ -47,9 +47,9 @@ export default function Home() {
   return (
     <div>
       <Box className="min-h-[90dvh] flex items-center bg-primary-500 p-10">
-        <Box className="flex md-flex-row w-full">
+        <Box className="flex flex-col md:flex-row w-full">
           <Box className="flex flex-col">
-            <p className="text-5xl pt-32 font-bold">
+            <p className="text-5xl md:pt-32 pt-16 font-bold">
               Welcome To <span className="text-white">Kachamale Solutions</span>{" "}
             </p>
             <p className="text-3xl mt-10">
@@ -70,15 +70,15 @@ export default function Home() {
           <img
             src={site.src}
             alt="site"
-            className="ml-auto"
-            width={500}
-            height={400}
+            className="ml-auto md:w-[33dvw]"
+            width={300}
+            height={300}
           />
         </Box>
       </Box>
       <Box className="flex p-5 flex-col min-h-[65dvh] justify-center">
         <p className="text-3xl font-bold mx-auto">About Us</p>
-        <Box className="mt-10 px-24 text-lg text-center">
+        <Box className="mt-10 md:px-24 px-12 text-lg text-center">
           At Kachamle solutions, we believe in pushing boundaries and redefining
           whats possible in technology. Founded with a passion for innovation,
           we strive to empower businesses like yours with cutting-edge
@@ -94,11 +94,11 @@ export default function Home() {
         alt="wave"
         width={10}
         height={10}
-        className="w-full -mt-36"
+        className="w-full md:-mt-36"
       />
       <Box className="flex p-5 flex-col min-h-[75dvh] justify-center">
-        <p className="text-3xl font-bold mx-auto">Why Choose Kachamale?</p>
-        <Box className="flex flex-col md:flex-row md:my-8 gap-4 bg">
+        <p className="text-3xl font-bold mx-auto pt-4">Why Choose Kachamale?</p>
+        <Box className="flex flex-col md:flex-row md:my-8 gap-4 pt-4">
           {whyContent.map((item, index) => {
             return (
               <Box key={index} className="mt-4 flex flex-col items-center bg-gray-100 rounded-md p-6 cursor-pointer hover:bg-gray-200">
@@ -132,8 +132,8 @@ export default function Home() {
         </Box>
       </Box>
       <Box className="flex p-5 flex-col min-h-[75dvh] justify-center">
-        <p className="text-3xl font-bold mx-auto">Meet The Team</p>
-        <Box className="flex flex-col md:flex-row md:my-8 gap-6 justify-center items-center">
+        <p className="text-3xl font-bold mx-auto py-4">Meet The Team</p>
+        <Box className="flex flex-col md:flex-row md:my-8 gap-6 justify-center items-center pb-4">
           <Image src="/team.png" width={400} height={300} alt="team"/>
           <Image src="/team2.png" width={400} height={400} alt="team"/>
         </Box>

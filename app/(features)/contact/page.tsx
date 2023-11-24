@@ -9,8 +9,8 @@ export default function Contact() {
           Get In touch with Us!
         </p>
       </Box>
-      <Box className="flex flex-row w-[60dvw] mx-auto min-h-[60dvh]  shadow-sm border-blue-500 border-2 rounded-lg my-16 ">
-        <Box className="w-4/12 p-4 bg-primary-500 flex items-center justify-center">
+      <Box className="flex md:flex-row flex-col min-w-[80dvw] md:w-[60dvw] md:mx-auto min-h-[60dvh] shadow-sm border-blue-500 border-2 rounded-lg my-16 ">
+        <Box className="md:w-4/12 p-4 bg-primary-500 flex items-center justify-center">
           <p className="text-2xl ">Contact Us!</p>
         </Box>
         <Paper className="p-4 w-full my-auto">
