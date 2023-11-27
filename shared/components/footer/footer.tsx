@@ -11,7 +11,7 @@ const links = [
   { link: "/services", label: "Services" },
   { link: "/products", label: "About" },
   { link: "/learn", label: "Vacancy/Career" },
-  { link: "/community", label: "Contact Us" },
+  { link: "/contact", label: "Contact Us" },
 ];
 
 const footerLinks = [

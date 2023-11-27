@@ -17,6 +17,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 const links = [
+  { link: "/", label: "Home" },
   { link: "/services", label: "Services" },
   { link: "/about", label: "About" },
   { link: "/career", label: "Vacancy/Career" },
