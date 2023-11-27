@@ -9,8 +9,8 @@ import React from "react";
 
 const links = [
   { link: "/services", label: "Services" },
-  { link: "/products", label: "About" },
-  { link: "/learn", label: "Vacancy/Career" },
+  { link: "/about", label: "About" },
+  { link: "/vacancy", label: "Vacancy/Career" },
   { link: "/contact", label: "Contact Us" },
 ];
 

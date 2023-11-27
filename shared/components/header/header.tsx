@@ -20,7 +20,7 @@ const links = [
   { link: "/", label: "Home" },
   { link: "/services", label: "Services" },
   { link: "/about", label: "About" },
-  { link: "/career", label: "Vacancy/Career" },
+  { link: "/vacancy", label: "Vacancy/Career" },
   { link: "/contact", label: "Contact Us" },
 ];
 
