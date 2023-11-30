@@ -5,7 +5,8 @@ import {
   IconBrandYoutube,
   IconMapPin,
 } from "@tabler/icons-react";
-import React from "react";
+import Image from "next/image";
+import logoFooter from "../../../public/logoFooter.png"
 
 const links = [
   { link: "/services", label: "Services" },
@@ -48,8 +49,7 @@ export default function Footer() {
         <Box>
           <Box className="flex flex-col items-center justify-center">
             <Flex className="items-center">
-              <IconMapPin size={35} color="white" />
-              <p className="font-bold text-white">KACHAMALE</p>
+            <Image src={logoFooter.src} alt="logo" width={250} height={100}/>
             </Flex>
             <Text fz={"sm"} className="text-center" c={"white"}>
               Jorney of excellence

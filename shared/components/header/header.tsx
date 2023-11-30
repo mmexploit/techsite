@@ -10,11 +10,12 @@ import {
   Collapse,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import classes from "./header.module.css";
 import { IconMapPin } from "@tabler/icons-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import logo from "../../../public/logo.png"
+import Image from "next/image";
 
 const links = [
   { link: "/", label: "Home" },
@@ -44,8 +45,7 @@ export function Header() {
     <header className="h-14 shadow-sm mb-30 bg-white border-b border-gray-300 dark:border-dark-4 sticky top-0 z-10">
       <Flex className="h-14 justify-between items-center px-3">
         <Flex className="items-center cursor-pointer" onClick={() => {router.push("/")}}>
-          <IconMapPin size={35} color="#0088e4" />
-          <p className="font-bold">KACHAMALE</p>
+          <Image src={logo.src} alt="logo" width={250} height={100}/>
         </Flex>
         <Group gap={10} visibleFrom="xs">
           {items}

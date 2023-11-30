@@ -12,6 +12,10 @@ import techbg3 from "../../public/techbg3.jpg";
 import { useRef } from "react";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import Link from "next/link";
+import partner1 from "../../../kachamale/public/partner1.svg"
+import partner2 from "../../../kachamale/public/partner2.svg"
+import partner3 from "../../../kachamale/public/partner3.svg"
+import partner4 from "../../../kachamale/public/partner4.svg"
 
 const whyContent = [
   {
@@ -52,6 +56,21 @@ const testimonials = [
     title: "CFO, Techub",
     content:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+];
+
+const partners = [
+  {
+    image: partner1,
+  },
+  {
+    image: partner2,
+  },
+  {
+    image: partner3,
+  },
+  {
+    image: partner4,
   },
 ];
 
@@ -138,7 +157,7 @@ export default function Home() {
           </Carousel.Slide>
         </Carousel>
       </Box>
-      <Box className="flex p-5 flex-col min-h-[65dvh] justify-center">
+      <Box className="flex p-5 flex-col min-h-[75dvh] justify-center bg-primary-50">
         <p className="text-4xl font-bold mx-auto">About Us</p>
         <Box className="mt-10 md:px-24 px-12 text-lg text-center">
           At Kachamle solutions, we believe in pushing boundaries and redefining
@@ -154,13 +173,13 @@ export default function Home() {
           <Link href={"/about"}><Button variant="outline" size="lg">See More</Button></Link>
         </Box>
       </Box>
-      <Image
+      {/* <Image
         src={wave.src}
         alt="wave"
         width={10}
         height={10}
         className="w-full md:-mt-36"
-      />
+      /> */}
       <Box className="flex p-5 flex-col min-h-[75dvh] justify-center">
         <p className="text-3xl font-bold mx-auto pt-4 text-center">
           Why Choose Kachamale?
@@ -212,11 +231,27 @@ export default function Home() {
           })}
         </Box>
       </Box>
+      <Box className="my-4 md:my-10">
+        <p className="text-center font-semibold pb-4 text-2xl">
+          Our<span className="text-primary-600"> Partners</span>
+        </p>
+        <Box className="flex flex-row flex-wrap items-center justify-center gap-3 md:gap-10 md:py-12">
+          {partners.map((item, index) => {
+            return (
+              <Box
+                key={index}
+                style={{ backgroundImage: `url(${item.image.src})` }}
+                className="h-32 w-32 bg-no-repeat bg-center bg-contain rounded-full bg-white"
+              />
+            );
+          })}
+        </Box>
+      </Box>
       <Box className="flex p-5 flex-col min-h-[75dvh] justify-center">
         <p className="text-3xl font-bold mx-auto py-4">Meet The Team</p>
-        <Box className="flex flex-col md:flex-row md:my-8 gap-6 justify-center items-center pb-4">
-          <Image src="/team.png" width={400} height={300} alt="team" />
-          <Image src="/team2.png" width={400} height={400} alt="team" />
+        <Box className="flex flex-col md:flex-row md:my-8 gap-6 justify-center  pb-4">
+          <Image src="/team.png" width={400} height={400} alt="team" />
+          <Image src="/team2.png" width={450} height={400} alt="team" />
         </Box>
       </Box>
       <Box></Box>
